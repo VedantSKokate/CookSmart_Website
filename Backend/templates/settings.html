@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static_file/css/styles.css">
+    <title>Settings - CookSmart</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        <form action="/update_settings" method="POST">
+            <input type="text" name="new_username" placeholder="Change Username">
+            <input type="password" name="new_password" placeholder="Change Password">
+            <button type="submit">Update</button>
+        </form>
+    </div>
+</body>
+</html>

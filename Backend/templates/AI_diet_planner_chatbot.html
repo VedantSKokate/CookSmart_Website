@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook Smart Chatbot</title>
+    <style>
+        /* Chatbox styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .chat-box {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .chat-message {
+            padding: 10px;
+            border-radius: 10px;
+            max-width: 80%;
+            font-size: 16px;
+        }
+
+        .chat-message-user {
+            align-self: flex-end;
+            background-color: #dcf8c6;
+            color: #000;
+        }
+
+        .chat-message-bot {
+            align-self: flex-start;
+            background-color: #ece5dd;
+            color: #000;
+        }
+
+        .input-box {
+            display: flex;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-top: 1px solid #ccc;
+        }
+
+        .input-box input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .input-box button {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .input-box button:hover {
+            background-color: #20b857;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box">
+            <div class="chat-message chat-message-bot">Hi! I'm your Cook Smart assistant. Let me help you with your diet plan.</div>
+        </div>
+        <div class="input-box">
+            <input id="chat-input" type="text" placeholder="Type your response..." autofocus>
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const inputBox = document.getElementById('chat-input');
+
+        let step = 0;
+        let userData = {
+            weight: '',
+            height: '',
+            medical_condition: '',
+            diet_preference: '',
+            goal: ''
+        };
+
+        function appendMessage(sender, message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add(sender === 'bot' ? 'chat-message-bot' : 'chat-message-user', 'chat-message');
+            messageDiv.textContent = message;
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;  // Scroll to the bottom
+        }
+
+        function resetConversation() {
+            step = 0;
+            userData = {
+                weight: '',
+                height: '',
+                medical_condition: '',
+                diet_preference: '',
+                goal: ''
+            };
+            appendMessage('bot', 'What is your weight (in kg)?');
+        }
+
+        function askNextQuestion() {
+            const questions = [
+                'What is your weight (in kg)?',
+                'What is your height (in cm)?',
+                'Do you have any medical conditions (e.g., Diabetes, Thyroid, Hypertension, Asthma, None)?',
+                'What is your diet preference (Veg, Non-Veg, Both)?',
+                'What is your goal (Weight loss, Weight gain, Build muscle, Maintain fitness)?'
+            ];
+
+            if (step < questions.length) {
+                appendMessage('bot', questions[step]);
+            } else {
+                appendMessage('bot', 'Thank you! Let me generate your personalized diet plan.');
+                submitData();
+            }
+        }
+
+        function sendMessage() {
+            const message = inputBox.value.trim();
+            if (!message) return;
+
+            appendMessage('user', message);
+            inputBox.value = '';
+
+            const stepsMap = [
+                () => userData.weight = message,
+                () => userData.height = message,
+                () => userData.medical_condition = message,
+                () => userData.diet_preference = message,
+                () => userData.goal = message
+            ];
+
+            if (step < stepsMap.length) {
+                stepsMap[step]();
+                step++;
+                askNextQuestion();
+            }
+        }
+
+        function submitData() {
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(userData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.diet_plan) {
+                    appendMessage('bot', 'Here is your personalized diet plan:');
+                    appendMessage('bot', data.diet_plan);
+                } else if (data.error) {
+                    appendMessage('bot', 'Error: ' + data.error);
+                } else {
+                    appendMessage('bot', 'Sorry, something went wrong while generating your diet plan.');
+                }
+                resetConversation();
+            })
+            .catch(error => {
+                appendMessage('bot', 'Error: ' + error.message);
+                resetConversation();
+            });
+        }
+
+        // Start conversation
+        askNextQuestion();
+    </script>
+</body>
+</html>

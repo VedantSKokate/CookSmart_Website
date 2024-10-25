@@ -1,0 +1,226 @@
+Name, Calories, Protein_gm, Fiber_gm, Ingredients, Veg/Non-Veg, Steps,Photo
+Paneer Butter Masala,350,14,3, Paneer Butter Tomato Spices, Veg, Cook paneer in rich butter tomato gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx7obO58mwR6VU7QAxk2wPPGAHWk0oQNNU1A&s
+Chole Bhature,500,15,8, Chickpeas Flour Spices, Veg, Prepare spicy chickpeas with fried bread,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkM_zuSX3rmE2RdtnhPOqBE8idO_aZnt_fSQ&s
+Palak Paneer,350,15,4, Spinach Paneer Spices, Veg, Cook spinach with paneer in spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWssGcGejWD3GjOUlWJavoQgJvPwYrgcixA&s
+Butter Chicken,600,30,5, Chicken Butter Cream Tomato Spices, Non-Veg, Cook chicken in butter creamy tomato gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN2jh7DvoLtDyDF6cigDHFrSMs5zMpaXRelA&s
+Vegetable Biryani,400,10,5, Basmati rice Mixed vegetables Spices, Veg, Layer rice with mixed vegetables and spices,https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg
+Chicken Curry,450,28,4, Chicken Onion Tomato Spices, Non-Veg, Cook chicken with onion tomato and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSixzD4VzaxSG2VMrAqOZ3cec6xSYcSf08qyw&s
+Dal Makhani,350,15,7, Black lentils Cream Butter Spices, Veg, Cook black lentils with butter and spices,https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-Blog.jpg
+Aloo Gobi,250,6,5, Potatoes Cauliflower Spices, Veg, Cook potatoes with cauliflower and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_QC2XSpMKHLYSLOTWLWnG_AiSLIb6dJ_dQ&s
+Fish Curry,400,30,2, Fish Coconut Milk Spices, Non-Veg, Cook fish in coconut milk with spices,https://i.ytimg.com/vi/qstxR_Jh4aY/maxresdefault.jpg
+Paneer Tikka,300,20,5, Paneer Yogurt Spices, Veg, Marinate paneer in yogurt and spices then grill,https://spicecravings.com/wp-content/uploads/2020/10/Paneer-Tikka-Featured-1.jpg
+Biryani,500,20,5, Basmati Rice Meat Spices, Non-Veg, Cook meat with basmati rice and spices,https://www.shutterstock.com/image-photo/chicken-biryani-quick-tasty-dum-600nw-2468105649.jpg
+Methi Paratha,300,8,5, Whole Wheat Flour Fenugreek Spices, Veg, Make paratha with fenugreek filling,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8XJOWFPYb8LPIsnUK7E23TzM8KTmgkSrCkQ&s
+Rogan Josh,500,25,4, Lamb Spices, Non-Veg, Cook lamb with spices until tender,https://static.toiimg.com/thumb/53192600.cms?imgsize=418831&width=800&height=800
+Tandoori Chicken,600,30,4, Chicken Yogurt Spices, Non-Veg, Marinate chicken in yogurt and spices then cook in tandoor,https://media.istockphoto.com/id/1396604313/photo/roasted-whole-chicken-legs-with-condiment-directly-above-photo.jpg?s=612x612&w=0&k=20&c=JDs72E-fX5SdcBQREta58T82W8zO_rFiKC7d1WwEEUE=
+Vegetable Samosa,250,8,5, Potatoes Peas Spices, Veg, Stuff samosas with spiced potato and peas filling,https://t4.ftcdn.net/jpg/07/37/50/95/360_F_737509581_oKmLaBjYOR2t0xTga8woVzC2aM3hJXIV.jpg
+Pav Bhaji,400,12,5, Mixed Vegetables Pav Spices, Veg, Mash mixed vegetables and serve with bread,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxS9_36jgShvcXRGcfZEkbi10Kkxoz8hEbyw&s
+Rajma,300,10,5, Kidney Beans Spices, Veg, Cook kidney beans in spiced gravy,https://myfoodstory.com/wp-content/uploads/2021/06/Rajma-Masala-4.jpg
+Dhokla,200,6,4, Chickpea Flour Yogurt Spices, Veg, Steam chickpea flour batter and serve,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeZtCo6ri9X2Bf7RtR3IXn4iRtBMpexqUEXg&s
+Mutton Korma,500,25,4, Mutton Cream Spices, Non-Veg, Cook mutton in creamy spiced gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTBsY-xCXuekOebN1r2QWouO04ijE0azctxg&s
+Khichdi,300,12,5, Rice Lentils Spices, Veg, Cook rice and lentils with spices,https://holycowvegan.net/wp-content/uploads/2014/06/masala-khichdi-featured-image.jpg
+Dal Tadka,300,12,5, Yellow Lentils Ghee Spices, Veg, Cook lentils with ghee and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD4dKcPnFlczSSGURgI9-sPaHCHNteNbYAyA&s
+Pani Puri,200,5,4, Semolina Water Spices, Veg, Fill puris with spicy water and serve,https://www.shutterstock.com/image-photo/panipuri-fuchka-fhuchka-gupchup-golgappa-260nw-2230877431.jpg
+Hyderabadi Biryani,600,25,4, Basmati Rice Chicken Spices, Non-Veg, Layer chicken and rice with spices,"https://static.wixstatic.com/media/91e241_475faa4fa56341f3878699dde5ab4904~mv2.jpg/v1/fill/w_864,h_576,al_c,lg_1,q_85/91e241_475faa4fa56341f3878699dde5ab4904~mv2.jpg"
+Aloo Paratha,350,10,5, Whole Wheat Flour Potatoes Spices, Veg, Stuff paratha with spiced potatoes,https://static.toiimg.com/thumb/53109843.cms?width=1200&height=900
+Pesarattu,250,8,4, Green Gram Rice Spices, Veg, Make dosa with green gram batter,https://www.shutterstock.com/image-photo/pesarattu-dosa-moong-dosai-indian-260nw-2246279143.jpg
+Prawn Curry,450,25,2, Prawns Coconut Milk Spices, Non-Veg, Cook prawns in coconut milk and spices,https://thumbs.dreamstime.com/b/prawn-curry-indian-tomato-gravy-39065975.jpg
+Vegetable Korma,400,10,4, Mixed Vegetables Cream Spices, Veg, Cook mixed vegetables in creamy gravy,https://www.cookclickndevour.com/wp-content/uploads/2021/01/vegetable-korma-recipe-1.jpg
+Egg Curry,400,25,4, Eggs Tomato Spices, Non-Veg, Cook eggs in spiced tomato gravy,https://www.sharmispassions.com/wp-content/uploads/2015/06/EggCurry5.jpg
+Stuffed Capsicum,300,10,5, Capsicum Rice Spices, Veg, Stuff capsicum with spiced rice filling,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSi9TrS4_Na4AL859cSYi0fAdgEEfGMLfIUw&s
+Bisi Bele Bath,400,12,5, Rice Lentils Vegetables Spices, Veg, Cook rice and lentils with vegetables and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/bisi-bele-bath-recipe.jpg
+Chettinad Chicken,500,30,5, Chicken Spices Coconut, Non-Veg, Cook chicken with spices and coconut,https://swatisani.net/kitchen/wp-content/uploads/2015/10/IMG_9350.jpg
+Veg Fried Rice,300,10,4, Rice Mixed Vegetables Spices, Veg, Stir-fry rice with mixed vegetables,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4qvg4T8s5bjfMEe1IsBoYBlgqhgQCVg0LHg&s
+Sev Puri,200,5,4, Sev Puri Spices, Veg, Assemble sev puri with toppings,https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/sev-puri-2.jpg
+Vegetable Raita,150,4,2, Yogurt Mixed Vegetables Spices, Veg, Mix yogurt with diced vegetables and serve,https://www.cookclickndevour.com/wp-content/uploads/2019/07/vegetable-raita-recipe.jpg
+Mutton Biryani,600,30,5, Basmati Rice Mutton Spices, Non-Veg, Layer mutton and rice with spices,https://i.ytimg.com/vi/s4YsKuoYTe8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA8DNcG2opFjrju1AlULhM7SOQLfA
+Paneer Bhurji,250,20,5, Paneer Spices, Veg, Cook crumbled paneer with spices,https://www.foodie-trail.com/wp-content/uploads/2021/08/PHOTO-2021-07-19-09-01-21.jpg
+Sambar,200,5,5, Lentils Vegetables Spices, Veg, Cook lentils with mixed vegetables and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/sambar.jpg
+Kadai Chicken,500,28,4, Chicken Bell Peppers Spices, Non-Veg, Cook chicken with bell peppers and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISVhHxJ5fLiQOdnO9SCXyU3qKIIWIFwOxeA&s
+Malai Kofta,400,15,5, Paneer Potatoes Cream Spices, Veg, Cook kofta in creamy gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsT8TUD-NzEQeESGXCTvbEFMbcMp-heDW-Kw&s
+Vegetable Pulao,400,10,5, Basmati Rice Mixed Vegetables Spices, Veg, Cook rice with mixed vegetables and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/veg-pulao-recipe.jpg
+Paneer Tikka Masala,400,20,5, Paneer Spices Cream, Veg, Cook paneer in spiced gravy,https://t4.ftcdn.net/jpg/06/50/67/49/360_F_650674921_zSKBnxMSCAg4eT40PG22ogu5tV9tuLUf.jpg
+Fish Fry,300,30,0, Fish Spices, Non-Veg, Marinate fish with spices and fry,https://media.istockphoto.com/id/620402520/photo/fish-fry-served-on-banana-leaf.jpg?s=612x612&w=0&k=20&c=_GUzZuYv_nzvM7Sw1a6NLpkrngUN-E2V0iHhyjwYN2M=
+Methi Chicken,450,30,4, Chicken Fenugreek Spices, Non-Veg, Cook chicken with fenugreek and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_MUTpEuNtnQjti4P0bWyER-4r-4CgyHOosg&s
+Vegetable Chaat,300,10,4, Mixed Vegetables Spices, Veg, Mix vegetables with spices and serve,https://www.richinserts.com/assets/media/blog_40_28.jpg
+Vegetable Khichdi,300,10,4, Rice Lentils Mixed Vegetables, Veg, Cook rice and lentils with mixed vegetables,https://i.ytimg.com/vi/Hmogo3lhZP4/sddefault.jpg
+Kothimbir Vadi,250,8,5, Gram Flour Coriander Spices, Veg, Steam gram flour and coriander mixture,https://shwetainthekitchen.com/wp-content/uploads/2020/04/IMG_8272-scaled.jpg
+Gobi Manchurian,400,12,5, Cauliflower Spices, Veg, Fry cauliflower and toss in spicy sauce,https://media.istockphoto.com/id/1334115358/photo/cabbage-manchurian.jpg?s=612x612&w=0&k=20&c=lZvW1lWr03mQszDbx4v59IAnxWacQ_Ti275hjj18hcE=
+Bhindi Masala,250,6,4, Okra Spices, Veg, Cook okra with spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmjMIalMhlJbhR4mm6S_G_F4NVDl3M9eJBiQ&s
+Baked Salmon,500,30,4, Salmon Fish Spices, Non-Veg, Bake salmon with spices,https://media.istockphoto.com/id/1214416414/photo/barbecued-salmon-fried-potatoes-and-vegetables-on-wooden-background.jpg?s=612x612&w=0&k=20&c=Y8RYbZFcvec-FXMMuoU-qkprC3TUFNiw3Ysoe8Drn6g=
+Dal Palak,300,12,5, Lentils Spinach Spices, Veg, Cook lentils with spinach and spices,https://www.spiceupthecurry.com/wp-content/uploads/2022/05/moong-dal-palak-2.jpg
+Vegetable Kathi Roll,300,8,5, Roti Mixed Vegetables Spices, Veg, Fill roti with spiced vegetables and roll,https://www.indianhealthyrecipes.com/wp-content/uploads/2024/02/paneer-kathi-roll-recipe.jpg
+Bhuna Gosht,500,30,4, Mutton Spices, Non-Veg, Cook mutton in spiced gravy,https://sinfullyspicy.com/wp-content/uploads/2023/07/1200-by-1200-images-6.jpg
+Vegetable Pani Puri,300,8,6, Semolina Spices, Veg, Fill puris with spiced vegetable water,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfz-wKLJ23HTQeKGrNewuf7JQTfCzCAeAI0w&s
+Vegetable Dosa,300,8,5, Rice Flour Mixed Vegetables Spices, Veg, Prepare dosa with spiced vegetables,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp1hmpSKUM6DaNgB6_UFNeyUHN7dc1gdLfvQ&s
+Dum Aloo,300,10,5, Potatoes Spices, Veg, Cook potatoes in spiced gravy,https://sinfullyspicy.com/wp-content/uploads/2024/01/1200-by-1200-images-3.jpg
+Vegetable Soup,200,5,4, Mixed Vegetables Spices, Veg, Boil mixed vegetables in water and serve,https://www.indianhealthyrecipes.com/wp-content/uploads/2019/06/vegetable-soup.jpg
+Egg Biryani,500,30,5, Basmati Rice Eggs Spices, Non-Veg, Layer eggs with rice and spices,https://ministryofcurry.com/wp-content/uploads/2019/11/egg-biryani-3-1.jpg
+Mutton Seekh Kebab,400,25,3, Mutton Spices, Non-Veg, Shape minced mutton and grill,https://media.istockphoto.com/id/501266025/photo/seekh-kabab-5.jpg?s=612x612&w=0&k=20&c=D6JXEtB4OLF9A91nAfDYLlh507LlbmP_M9PZBoJqD9Q=
+Paneer Pakoda,300,15,5, Paneer Gram Flour Spices, Veg, Dip paneer in batter and fry,https://www.indianhealthyrecipes.com/wp-content/uploads/2016/06/paneer-pakoda.jpg
+Vegetable Bonda,250,8,5, Potatoes Spices, Veg, Shape and fry spiced potato mixture,https://i.ytimg.com/vi/TwXTtZs6DGA/maxresdefault.jpg
+Lentil Salad,200,10,5, Lentils Vegetables Spices, Veg, Mix lentils with diced vegetables and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5ebzgXqWvkntZwKC0CNn2mDjd5RANHWOXQ&s
+Vegetable Thali,600,15,6, Rice Dal Vegetable Curry Raita, Veg, Serve rice dal curry and raita together,https://imgmedia.lbb.in/media/2023/05/645a4857fe6a191f3785cdc4_1683638359224.jpg
+Chana Masala,300,10,5, Chickpeas Spices, Veg, Cook chickpeas in spiced gravy,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/chana-masala-recipe.jpg
+Vegetable Dumplings,250,10,4, Flour Mixed Vegetables Spices, Veg, Steam dumplings filled with vegetables,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScFeCQh6AyAJbGRqd8dqzFAdC1J4856DqF6g&s
+Bhel Puri,250,5,3, Puffed Rice Vegetables Chutney, Veg, Mix puffed rice with vegetables and chutney,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZvMeuOIbE1yU3idYmqM5N8XpL-qFNWj6UGA&s
+Aloo Tikki,300,8,4, Potatoes Spices, Veg, Fry spiced potato patties until golden,https://www.indianhealthyrecipes.com/wp-content/uploads/2017/05/aloo-tikki-recipe-1.jpg
+Vegetable Pakora,350,10,5, Mixed Vegetables Gram Flour Spices, Veg, Deep fry battered vegetables until crispy,https://khinskitchen.com/wp-content/uploads/2024/04/vegetable-pakora-04.jpg
+Paneer Lababdar,400,20,5, Paneer Tomato Spices, Veg, Cook paneer in spiced tomato gravy,https://www.indianhealthyrecipes.com/wp-content/uploads/2020/10/paneer-lababdar-recipe-500x500.jpg
+Tandoori Roti,200,6,4, Whole Wheat Flour, Veg, Roll dough into roti and cook in tandoor,https://www.indianhealthyrecipes.com/wp-content/uploads/2023/09/tandoori-roti-recipe.jpg
+Kadhi Pakora,350,10,5, Gram Flour Yogurt Spices, Veg, Cook gram flour dumplings in yogurt gravy,https://www.vegrecipesofindia.com/wp-content/uploads/2012/01/punjabi-kadhi-pakora-recipe-1.jpg
+Chicken Biryani,500,25,5, Basmati Rice Chicken Spices, Non-Veg, Layer chicken with rice and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/chicken-biryani.jpg
+Puri,300,10,5, Whole Wheat Flour, Veg, Fry rolled dough until puffed and golden,https://www.indianhealthyrecipes.com/wp-content/uploads/2020/12/poori-puri-recipe.jpg
+Samosa Chaat,300,10,5, Samosas Chickpeas Chutney, Veg, Crumble samosas and mix with chickpeas and chutney,https://masalaandchai.com/wp-content/uploads/2021/10/Samosa-Chaat-with-Chai.jpg
+Ras Malai,250,7,4, Paneer Milk Sugar, Veg, Soak paneer in sweetened milk,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXa6O9xpr1i3EEgRPvYyLU7CGBT7wnx5hl8A&s
+Kothimbir Bhaji,200,6,5, Coriander Flour Spices, Veg, Cook coriander leaves in spiced batter,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnAeUcc2EYEdTygQ5vOCzIbQUNRJG6otHQXA&s
+Vegetable Ramen,350,12,5, Noodles Mixed Vegetables Spices, Veg, Cook noodles with spiced vegetables,https://peasandcrayons.com/wp-content/uploads/2021/05/veggie-ramen-soup-recipe-4.jpg
+Dumplings,250,8,5, Flour Mixed Vegetables Spices, Veg, Fill dumplings with spiced vegetables and steam,"https://hips.hearstapps.com/hmg-prod/images/delish-202210-soupdumplings-182-1665605386.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*"
+Biryani Pulao,450,15,5, Rice Mixed Vegetables Spices, Veg, Cook rice with mixed vegetables and spices,https://i.ytimg.com/vi/Do7ZdUodDdw/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBPsfuVk99MJWOHUAsII7oqo525jA
+Paneer Bhurji,300,20,5, Paneer Onion Spices, Veg, Scramble paneer with onions and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNFgJoOofgCOWN4h_2Qb8WPeOYWauZ9vQbg&s
+Methi Thepla,250,8,4, Whole Wheat Flour Fenugreek Spices, Veg, Cook spiced fenugreek flatbread,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBaXfuYWLveMJRuWflDM2eXqtsmXvQiR67wA&s
+Tomato Rice,400,12,5, Rice Tomatoes Spices, Veg, Cook rice with tomatoes and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/tomato-rice-recipe.jpg
+Cabbage Sabzi,200,5,3, Cabbage Spices, Veg, Cook cabbage with spices until tender,https://cdn.tarladalal.com/members/9306/procstepimgs/step-18_cabbage-sabzi-18-201140.jpg
+Paneer Jalfrezi,400,20,5, Paneer Mixed Peppers Spices, Veg, Stir-fry paneer with mixed peppers and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/05/paneer-jalfrezi-recipe.jpg
+Khoya Methi,300,10,5, Khoya Fenugreek Spices, Veg, Cook khoya with fenugreek and spices,https://img-global.cpcdn.com/recipes/a42bad2dc1eefb6a/680x482cq70/khoya-methi-matar-recipe-main-photo.jpg
+Methi Chutney,150,4,2, Fenugreek Tamarind Spices, Veg, Blend fenugreek with tamarind and spices,https://manjulaskitchen.com/wp-content/uploads/methi_fenugreek_chutney.jpg
+Tomato Chutney,100,2,1, Tomatoes Spices, Veg, Cook tomatoes with spices until soft,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYiIJj7IYg7Y9YbdQSsyuqC2pXLy2nhG6RRA&s
+Vegetable Uthappam,300,8,5, Rice Flour Mixed Vegetables Spices, Veg, Cook thick dosa with mixed vegetables,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNrCKYPeqTOjGZcPiehGv0y4X2RPnvF6knRA&s
+Prawn Biryani,600,30,5, Basmati Rice Prawns Spices, Non-Veg, Layer prawns with rice and spices,https://www.cubesnjuliennes.com/wp-content/uploads/2020/12/Prawn-Biryani-Recipe.jpg
+Vegetable Masala Dosa,400,12,5, Rice Flour Potatoes Spices, Veg, Fill dosa with spiced potato mixture,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWPMGiJK4ZEXAwLEy5LdIRxrbmkCnEkCXvw&s
+Stuffed Paratha,350,10,5, Whole Wheat Flour Potatoes Spices, Veg, Stuff paratha with spiced potatoes and fry,https://www.indianhealthyrecipes.com/wp-content/uploads/2020/08/aloo-paratha-recipe-500x500.jpg
+Methi Malai Murg,500,30,4, Chicken Fenugreek Cream Spices, Non-Veg, Cook chicken in creamy fenugreek sauce,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpoWEvH6ln7ZY5wum7Td7LEGpD234j3sQe4g&s
+Vegetable Nihari,500,30,5, Mixed Vegetables Spices, Veg, Slow-cook vegetables in rich gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQutS6ANocwKcfDmIIUHg3NDISQdMIOy7OLdg&s
+Khichuri,300,10,5, Rice Lentils Spices, Veg, Cook rice and lentils with spices,https://i0.wp.com/spicechronicles.com/wp-content/uploads/2012/11/Khi_1.jpg?resize=640%2C640&ssl=1
+Kheer,300,7,5, Rice Milk Sugar, Veg, Cook rice in sweetened milk until soft,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/kheer-recipe.jpg
+Mutton Pulao,600,25,5, Basmati Rice Mutton Spices, Non-Veg, Cook mutton with rice and spices,https://untoldrecipesbynosheen.com/wp-content/uploads/2023/08/mutton-pulao-featured.jpg
+Vegetable Korma,400,10,5, Mixed Vegetables Cream Spices, Veg, Cook mixed vegetables in creamy gravy,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/veg-kurma-vegetable-korma-recipe-500x375.jpg
+Masala Chai,100,3,0, Tea Spices Milk, Veg, Boil tea with spices and milk,https://budleaf.com/wp-content/uploads/2023/04/How-to-make-masala-chai-1568x1039.jpeg
+Beetroot Raita,150,4,2, Yogurt Beetroot Spices, Veg, Mix yogurt with grated beetroot and spices,https://mygoodfoodworld.com/wp-content/uploads/2023/03/beet-raita.jpg
+Bhindi Do Pyaza,250,6,4, Okra Onions Spices, Veg, Cook okra with onions and spices,https://foodsandflavorsbyshilpi.com/wp-content/uploads/2014/09/FB-Thumnails-website-old-96.jpg
+Vegetable Curry,400,10,5, Mixed Vegetables Spices, Veg, Cook mixed vegetables in spiced gravy,https://www.recipetineats.com/tachyon/2017/07/Vegetable-Curry.jpg?resize=500%2C500
+Sweet Lassi,200,5,2, Yogurt Sugar, Veg, Blend yogurt with sugar until smooth,https://www.indianveggiedelight.com/wp-content/uploads/2023/01/sweet-lassi-recipe-featured.jpg
+Rajma Chawal,400,12,5, Kidney Beans Rice Spices, Veg, Serve kidney beans with rice,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrY-YDbNH_JLFnMOh26A1l7WKFgORHz6C3uQ&s
+Vegetable Stir Fry,350,10,5, Mixed Vegetables Spices, Veg, Stir-fry vegetables in spices,https://www.dinneratthezoo.com/wp-content/uploads/2019/02/vegetable-stir-fry-3.jpg
+Coconut Rice,400,12,5, Rice Coconut Spices, Veg, Cook rice with coconut and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/coconut-rice-recipe.jpg
+Vegetable Sandwich,250,8,5, Bread Mixed Vegetables Spices, Veg, Fill bread with spiced vegetables,https://shwetainthekitchen.com/wp-content/uploads/2020/08/IMG_9973.jpg
+Egg Bhurji,300,25,5, Eggs Onion Spices, Non-Veg, Scramble eggs with onions and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgpDPizX6nGLyzXnHWHrHm6J38ac1u0mGgYw&s
+Palak Chole,350,15,5, Spinach Chickpeas Spices, Veg, Cook chickpeas with spinach and spices,https://www.whiskaffair.com/wp-content/uploads/2014/08/Palak-Chole-1.jpg
+Paneer Kofta,400,20,5, Paneer Spices, Veg, Deep fry paneer balls and cook in gravy,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/malai-kofta-recipe.jpg
+Khichdi,300,12,5, Rice Lentils Spices, Veg, Cook rice and lentils with spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2018/07/khichdi-recipe.jpg
+Vegetable Kebab,300,10,5, Mixed Vegetables Spices, Veg, Shape spiced vegetable mixture into kebabs and grill,https://www.allrecipes.com/thmb/KBVMWciO-GJsEKnVOcUFvBDrOWk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/229166-grilled-veggie-skewers-DDMFS-013-4x3-38df5f3275934280a930c09d660a332c.jpg
+Daal Baati,400,10,5, Wheat Flour Lentils Spices, Veg, Serve baked bread with lentil curry,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDudpDlsGkfzS1TjptYN1ZH3wgidCSx-pxQ&s
+Tamarind Rice,400,10,5, Rice Tamarind Spices, Veg, Mix rice with tamarind and spices,https://www.vegrecipesofindia.com/wp-content/uploads/2016/10/tamarind-rice-recipe-1.jpg
+Gajar Ka Halwa,300,5,3, Carrots Milk Sugar, Veg, Cook grated carrots in sweetened milk,https://www.nestleprofessional.in/sites/default/files/2022-09/Gajar-Halwa_0.jpg
+Vegetable Sandwich,250,8,5, Bread Mixed Vegetables Spices, Veg, Fill bread with spiced vegetables,https://bachelorrecipe.com/wp-content/uploads/2018/05/Vegetable-Sandwich.jpg
+Vegetable Chowmein,350,10,5, Noodles Mixed Vegetables Spices, Veg, Stir-fry noodles with mixed vegetables,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf6Eiul5ng8yPi4V67BNpqmPF4BYbLUHDlGQ&s
+Pani Puri,200,5,4, Semolina Spices, Veg, Fill puris with spiced water,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Pani_Puri1.JPG/640px-Pani_Puri1.JPG
+Seviyan,250,5,2, Vermicelli Milk Sugar, Veg, Cook vermicelli in sweetened milk,https://www.teaforturmeric.com/wp-content/uploads/2021/05/20-Minute-Seviyan-Sheer-Khurma-13.jpg
+Vegetable Biryani,450,10,5, Basmati Rice Mixed Vegetables Spices, Veg, Layer rice with mixed vegetables and spices,https://www.indianveggiedelight.com/wp-content/uploads/2020/04/veg-biryani-instant-pot.jpg
+Paneer Paratha,300,20,5, Whole Wheat Flour Paneer Spices, Veg, Stuff paratha with spiced paneer and fry,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4MqBRWVa_AnJo64xO_28iBlFlDMekF_xz8A&s
+Daal Methi,300,12,5, Lentils Fenugreek Spices, Veg, Cook lentils with fenugreek and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0XxLZiwFMHGv29jHiFrArn35h62u7oYbVTw&s
+Palak Roti,250,8,5, Whole Wheat Flour Spinach Spices, Veg, Roll dough with spinach and cook on tawa,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO9dOhTbXMbNIbtRS1yPtjUMtlWvlHrGTrgA&s
+Paneer Malai,400,20,5, Paneer Cream Spices, Veg, Cook paneer in creamy gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqqWv-gS1aqcE2OXOfp33IOarUwRtzSOW8hA&s
+Aloo Chaat,200,5,3, Potatoes Spices, Veg, Toss fried potatoes with spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh42o-x-FfvCiNrod_F8lT9AJK21TlEaTEhg&s
+Vegetable Sagu,350,10,5, Mixed Vegetables Spices, Veg, Cook mixed vegetables in rich gravy,https://rakskitchen.net/wp-content/uploads/2022/01/veg-sagu.jpg
+Masala Dosa,400,10,5, Rice Flour Potatoes Spices, Veg, Fill dosa with spiced potatoes,https://revi.b-cdn.net/wp-content/uploads/2017/03/masala-dosa-2.jpg
+Chicken Seekh Kebab,400,25,3, Chicken Spices, Non-Veg, Shape minced chicken and grill,https://www.cookwithnabeela.com/wp-content/uploads/2024/02/ChickenSeekhKebab.webp
+Chole Tikki,300,10,5, Chickpeas Potatoes Spices, Veg, Mash chickpeas and potatoes into patties and fry,https://www.vegrecipesofindia.com/wp-content/uploads/2012/12/aloo-tikki-chole-recipe-5.jpg
+Vegetable Pulao,400,10,5, Basmati Rice Mixed Vegetables Spices, Veg, Cook rice with mixed vegetables and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/veg-pulao-recipe.jpg
+Paneer Quesadilla,300,15,5, Tortilla Paneer Spices, Veg, Fill tortilla with spiced paneer and grill,https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2018/Chilli_Paneer_Quesadillas-3.jpg
+Rajma Salad,200,6,3, Kidney Beans Vegetables Spices, Veg, Mix kidney beans with vegetables and spices,https://palatesdesire.com/wp-content/uploads/2022/09/rajma-salad-recipe@palates-desire.jpg
+Pumpkin Curry,300,10,5, Pumpkin Spices, Veg, Cook pumpkin in spiced gravy,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/10/pumpkin-curry-recipe.jpg
+Veg Fried Rice,350,10,5, Rice Mixed Vegetables Spices, Veg, Stir-fry rice with mixed vegetables,https://www.indianhealthyrecipes.com/wp-content/uploads/2020/12/fried-rice.jpg
+Fish Curry,400,20,5, Fish Coconut Spices, Non-Veg, Cook fish in coconut gravy,https://www.priyom.in/wp-content/uploads/2022/05/recipe-3.png
+Kathi Roll,300,10,5, Roti Mixed Vegetables Spices, Veg, Wrap spiced vegetables in roti,https://www.indianhealthyrecipes.com/wp-content/uploads/2024/02/chicken-kathi-roll-chicken-frankie.jpg
+Methi Rice,350,10,5, Rice Fenugreek Spices, Veg, Cook rice with fenugreek and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/methi-rice-recipe.jpg
+Vegetable Qorma,400,12,5, Mixed Vegetables Cream Spices, Veg, Cook mixed vegetables in creamy gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpH5mdObhztEtLbdnE5aU5j0K3Vwl9j78eUA&s
+Methi Pulao,400,10,5, Basmati Rice Fenugreek Spices, Veg, Cook rice with fenugreek and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6OAKQSMZ18czNLQk3OWxvGjfj1kY9mR6qJQ&s
+Palak Paneer,400,20,5, Spinach Paneer Spices, Veg, Cook paneer in spinach gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1YSfw78RFLx5MOMA93_pGPETbWp6fsdbrBA&s
+Mutton Curry,600,30,5, Mutton Spices, Non-Veg, Slow-cook mutton in rich gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpB7tcYcpNEQV7-KuDt3tm4n_wqVVaOCETWQ&s
+Veg Noodles,350,12,5, Noodles Mixed Vegetables Spices, Veg, Stir-fry noodles with mixed vegetables,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOtHkeg3ozBJdDw_AxSa-F_y7X1UDMc8VjKw&s
+Vegetable Sambar,350,10,5, Mixed Vegetables Lentils Spices, Veg, Cook lentils with mixed vegetables and spices,https://www.playfulcooking.com/wp-content/uploads/2023/03/vegetable-sambar-01.jpg
+Sooji Halwa,250,8,4, Semolina Ghee Sugar, Veg, Cook semolina in ghee with sugar,https://i0.wp.com/www.bharatzkitchen.com/wp-content/uploads/2020/08/Suji-Ka-Halwa.jpg?fit=640%2C360&ssl=1
+Methi Malai Chicken,500,30,4, Chicken Fenugreek Cream Spices, Non-Veg, Cook chicken in creamy fenugreek sauce,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7qsgm9Q3_NtHIEcZnr5SCQ1rZ2goHGHSL3A&s
+Vegetable Raita,150,4,2, Yogurt Mixed Vegetables Spices, Veg, Mix yogurt with chopped vegetables,https://www.sharmispassions.com/wp-content/uploads/2020/12/9074950711_16a4a3c84e_o.jpg
+Aloo Baingan,300,8,5, Potatoes Eggplant Spices, Veg, Cook potatoes with eggplant and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/aloo-baingan-recipe.jpg
+Chana Masala,350,12,5, Chickpeas Spices, Veg, Cook chickpeas in rich gravy,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/chana-masala-recipe.jpg
+Vegetable Khichdi,300,10,5, Rice Lentils Spices, Veg, Cook rice and lentils with mixed vegetables,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPpZmutBRPlj3icycbSPV4rPr_MMtq8tJboQ&s
+Methi Murg,500,30,4, Chicken Fenugreek Spices, Non-Veg, Cook chicken with fenugreek and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcbAXY1geFLUbsXqx67nsGq0L1N37N_uN_4A&s
+Pumpkin Roti,250,8,5, Whole Wheat Flour Pumpkin Spices, Veg, Roll dough with pumpkin and cook on tawa,https://i.ytimg.com/vi/P9Jk99UWqKo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC49u88EcLc44ooQrPQCW2u7_bIOg
+Tawa Pulao,400,10,5, Basmati Rice Mixed Vegetables Spices, Veg, Cook rice with mixed vegetables on tawa,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-K0JAnO4aieuQJoNKfXP3SBclKpSPr_6BjA&s
+Daal Tadka,300,12,5, Lentils Spices, Veg, Cook lentils and temper with spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGBwQjYAU-g9ZKjZHGneE5IPpMOv6LQAo1Dw&s
+Aloo Gobi,300,8,5, Potatoes Cauliflower Spices, Veg, Cook potatoes with cauliflower and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/aloo-gobi-recipe.jpg
+Gobi Manchurian,350,12,5, Cauliflower Spices, Veg, Fry cauliflower in spicy batter and toss with sauce,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/gobi-manchurian-cauliflower-manchurian.jpg
+Chicken Biryani,500,25,5, Basmati Rice Chicken Spices, Non-Veg, Layer chicken with rice and spices,https://ministryofcurry.com/wp-content/uploads/2024/06/chicken-biryani-5.jpg
+Vegetable Pudding,300,8,4, Mixed Vegetables, Veg, Steam mixed vegetables and serve with sauce,https://images.eatsmarter.com/sites/default/files/styles/max_size/public/vegetable-pudding-597366.jpg
+Bitter Gourd Stir Fry,250,5,3, Bitter Gourd Spices, Veg, Cook bitter gourd with spices until tender,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxvOtH3Ca8dM9xezQcAV91OsQIOgSkTxWBJQ&s
+Lentil Soup,250,6,3, Lentils Spices, Veg, Cook lentils in spiced water,https://www.noracooks.com/wp-content/uploads/2018/11/square-1-500x500.jpg
+Egg Curry,400,25,5, Eggs Spices, Non-Veg, Cook eggs in rich gravy,https://theflavoursofkitchen.com/wp-content/uploads/2020/04/Dhaba-Style-Egg-Curry-2.jpg
+Masoor Dal,300,12,5, Red Lentils Spices, Veg, Cook lentils with spices until soft,https://www.teaforturmeric.com/wp-content/uploads/2022/06/Masoor-Dal-09.jpg
+Veg Pakora,350,10,5, Mixed Vegetables Gram Flour Spices, Veg, Deep fry vegetables in batter until crispy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9LVOVGr2qnSsvKgEmCpGTQqLF1NHEbQPY6A&s
+Sev Puri,250,5,3, Puri Sev Chutney, Veg, Top puris with sev and chutney,https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/sev-puri-2.jpg
+Biryani,500,25,5, Basmati Rice Mixed Vegetables Spices, Veg, Layer rice with mixed vegetables and spices,"https://assets.cntraveller.in/photos/6218cfdf6774879c067d3ece/16:9/w_1920,h_1080,c_limit/best%20biryani%20in%20pune%20lead.jpg"
+Pork Vindaloo,600,30,5, Pork Spices, Non-Veg, Cook pork in spicy vinegar sauce,https://www.allrecipes.com/thmb/Q-Wi8mphO7IGeyLyjW96GmK3mQY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/734094-d43077b9e8d74fd69594627d88dc3531.jpg
+Dum Aloo,400,20,5, Potatoes Spices, Veg, Cook potatoes in rich gravy,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/dum-aloo-recipe.jpg
+Fish Tikka,400,25,5, Fish Spices, Non-Veg, Marinate fish and grill until tender,https://www.lekhafoods.com/media/202121/fish-tikka.jpg
+Aloo Methi,300,8,5, Potatoes Fenugreek Spices, Veg, Cook potatoes with fenugreek and spices,https://pipingpotcurry.com/wp-content/uploads/2023/03/aloo-methi.jpg
+Pesarattu,250,10,5, Green Gram Spices, Veg, Cook dosa with green gram batter,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTwMq6wShVn9HskRUc56dZmJ2Rv9OlsHMWfg&s
+Vegetable Moong Dal,300,10,5, Moong Lentils Spices, Veg, Cook lentils with mixed vegetables and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBxqWIR4SBhFgqkJysukXJe7QjyjcZDgNtxg&s
+Zucchini Curry,300,10,5, Zucchini Spices, Veg, Cook zucchini in spiced gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Jmch7WRzy2cfAbCmLzrhhrG6VLu0UUmzHw&s
+Kadhi,350,10,5, Yogurt Gram Flour Spices, Veg, Cook yogurt with gram flour and spices,https://static.toiimg.com/thumb/89721602.cms?imgsize=75354&width=800&height=800
+Kothimbir Vadi,200,6,4, Coriander Gram Flour Spices, Veg, Steam and fry spiced coriander dumplings,https://i0.wp.com/southindianrecipes.in/wp-content/uploads/2021/08/Kothimbir-Vadi.jpg?resize=768%2C1024&ssl=1
+Paneer Tikka,400,20,5, Paneer Spices, Veg, Marinate paneer and grill until charred,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ2WY2YmIJtXrpmDToEHwJIOAcyBefjpFwXg&s
+Dal Chawal,400,12,5, Lentils Rice Spices, Veg, Serve lentils with rice,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHIEnKPsNPAE9EwAdDJUGpaEcrZF16p7bqVQ&s
+Palak Paratha,300,10,5, Whole Wheat Flour Spinach Spices, Veg, Roll dough with spinach and cook on tawa,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7h0G2lBsLsipOkcr12lfphNfLNo1aia5PKQ&s
+Cabbage Paratha,300,10,5, Whole Wheat Flour Cabbage Spices, Veg, Stuff paratha with spiced cabbage and fry,https://cookingwithsj.com/wp-content/uploads/2013/11/cabbage-paratha2.jpg
+Khoya Paneer,400,20,5, Paneer Khoya Spices, Veg, Cook paneer in rich khoya gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAh9EFeBrRJKaLSCH8rf4HAY9PPRuJ6Wt4Dg&s
+Vegetable Dhokla,300,10,5, Gram Flour Spices, Veg, Steam gram flour batter with vegetables,https://i0.wp.com/veenapatwardhan.com/pat-a-cake/wp-content/uploads/2022/03/Healthy-Vegetable-Dhokla.jpg?fit=760%2C400&ssl=1
+Prawns Masala,400,20,5, Prawns Spices, Non-Veg, Cook prawns in spicy masala,https://www.licious.in/blog/wp-content/uploads/2020/12/Prawns-Masala-min-600x600.jpg
+Lemon Rice,350,10,5, Rice Lemon Spices, Veg, Mix rice with lemon and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2022/02/lemon-rice-recipe.jpg
+Aloo Chole,400,12,5, Potatoes Chickpeas Spices, Veg, Cook potatoes with chickpeas in gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3qSzUOaX9_3cbc__mKiQN0LWQn2ooVjr2tQ&s
+Bisi Bele Bath,400,12,6, Rice Lentils Mixed Vegetables Spices, Veg, Cook rice and lentils with mixed vegetables and spices,https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/bisi-bele-bath-recipe.jpg
+Aloo Tikki,250,6,4, Potatoes Spices, Veg, Mash potatoes with spices and shape into patties, https://www.vegrecipesofindia.com/wp-content/uploads/2022/07/aloo-tikki-recipe-2.jpg
+Pani Puri,200,4,3, Puri Tamarind Water Spices, Veg, Fill puris with spiced water and serve,https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2015/03/Pani-Puri-H2-WP-WT-S.jpg?fit=647%2C900&ssl=1
+Khichdi,300,8,5, Rice Lentils Spices, Veg, Cook rice and lentils together with spices,https://holycowvegan.net/wp-content/uploads/2014/06/masala-khichdi-featured-image.jpg
+Dhokla,250,8,4, Gram Flour Spices, Veg, Steam gram flour batter until fluffy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTxgJRNarI0NJ1BB3s1680fmXdd70DnVhSw&s
+Bhel Puri,200,4,3, Puffed Rice Vegetables Chutney, Veg, Mix puffed rice with vegetables and chutney,https://upload.wikimedia.org/wikipedia/commons/2/20/Indian_cuisine-Chaat-Bhelpuri-03.jpg
+Cabbage Roll,300,8,5, Cabbage Rice Spices, Veg, Fill cabbage leaves with rice and spices, https://www.spendwithpennies.com/wp-content/uploads/2022/02/Easy-Cabbage-Rolls-SpendWithPennies-10.jpg
+Baida Roti,400,20,5, Roti Egg Spices, Non-Veg, Stuff roti with spiced egg and cook on tawa,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS31EiNlJf5BRFlGrx6wgElzGlduSLElxWkIQ&s
+Gajar Ka Halwa,300,6,2, Carrots Milk Sugar, Veg, Cook grated carrots with milk and sugar until thick,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Kl11Sse-4afhlB0nrkcRHdePZ2hNirnfgg&s
+Aloo Kachaloo,250,4,3, Potatoes Spices, Veg, Boil and mash potatoes with spices, https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH_bJfpHc9eG31t9do_iZfEAEnHDFQg01VhA&s
+Masala Dosa,400,10,4, Rice Lentils Potatoes Spices, Veg, Fill dosa with spiced potato filling and serve,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRKEoKRezBKpHWYUIbZaKX9Kw_qCv-hQfTVw&s
+Paneer Bhurji,350,20,3, Paneer Vegetables Spices, Veg, Scramble paneer with vegetables and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk8oEUJRNg33QAuXbrwpOw2JO9rEw4BP0p1g&s
+Dal Makhani,400,14,5, Black Lentils Cream Spices, Veg, Slow-cook lentils in creamy sauce,https://i.ytimg.com/vi/M7nvJN0vQ3g/maxresdefault.jpg
+Chole Bhature,500,15,5, Chickpeas Flour Spices, Veg, Serve spicy chickpeas with fried bread,https://www.shutterstock.com/image-photo/chole-bhature-north-indian-food-600nw-2241211611.jpg
+Samosa,300,6,4, Potatoes Peas Spices, Veg, Stuff pastry with spiced potatoes and deep-fry,https://static.toiimg.com/thumb/61050397.cms?width=1200&height=900
+Korma,450,20,4, Mixed Vegetables Cream Spices, Veg, Cook vegetables in rich creamy gravy,https://www.shutterstock.com/image-photo/korma-chicken4-260nw-223265599.jpg
+Raita,150,4,2, Yogurt Vegetables Spices, Veg, Mix yogurt with chopped vegetables and spices,https://sandhyahariharan.co.uk/wp-content/uploads/2020/06/Boondi-Raita-1-of-4.jpg
+Pav Bhaji,400,10,5, Mixed Vegetables Bread Spices, Veg, Mash vegetables and serve with buttered bread,https://shwetainthekitchen.com/wp-content/uploads/2022/07/Pav-bhaji.jpg
+Vegetable Pulao,350,10,4, Basmati Rice Mixed Vegetables Spices, Veg, Cook rice with mixed vegetables and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD01uJ7v0g5acDZnOGg-8iVzn6RzUsVKnHCw&s
+Kachori,300,8,5, Gram Flour Spices, Veg, Stuff pastry with spiced lentils and deep-fry,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuAYFO7-G4bcXTppjZnMrzNlExnQjSMl1NsA&s
+Stuffed Paratha,400,12,5, Whole Wheat Flour Vegetables Spices, Veg, Stuff paratha with spiced filling and fry,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0v4QIMI5_es8RbHMy_w3fjHWLfmJCiXHUw&s
+Murgh Methi,500,30,4, Chicken Fenugreek Spices, Non-Veg, Cook chicken with fenugreek and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhnzwYN-sAjM5UoVkjpSsGoOCzGLxf-CKwg&s
+Veg Seekh Kebabs,400,10,5, Mixed Vegetables Spices, Veg, Shape spiced vegetable mixture onto skewers and grill,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDjZarfmQaezG2BbLU-nr17WAbuqa86nS2uw&s
+Murg Tikka,500,25,4, Chicken Spices, Non-Veg, Marinate chicken and grill until cooked,https://t4.ftcdn.net/jpg/05/85/17/03/360_F_585170352_7D9PjNXOvU3PAB4ynMRWpEavhBNuLG3J.jpg
+Vegetable Biryani,500,15,5, Basmati Rice Mixed Vegetables Spices, Veg, Layer rice with mixed vegetables and spices,https://media.istockphoto.com/id/179085494/photo/indian-biryani.jpg?s=612x612&w=0&k=20&c=VJAUfiuavFYB7PXwisvUhLqWFJ20-9m087-czUJp9Fs=
+Rajma,350,15,5, Kidney Beans Spices, Veg, Cook kidney beans in rich gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxQTkeqJli9DV70Nuh8RfWF-VzWn-fElqZ_w&s
+Seviyan,250,6,3, Vermicelli Milk Sugar, Veg, Cook vermicelli in milk with sugar,https://static.toiimg.com/thumb/84061935.cms?imgsize=535052&width=800&height=800
+Sooji Dhokla,250,8,4, Semolina Spices, Veg, Steam semolina batter with spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS23BVq5tyccJRxfCT3iheQA5gmxgJdYSim-A&s
+Dumplings,300,8,4, Flour Vegetables Spices, Veg, Fill dough with spiced vegetables and steam,https://images.squarespace-cdn.com/content/v1/55be995de4b071c106b3b4c0/6af0cbeb-8a58-4993-ab68-8e9919d6d04c/Salmon+Dumplings-6.jpg
+Palak Chole,400,12,5, Spinach Chickpeas Spices, Veg, Cook spinach with chickpeas and spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXF8IorHC1uJlK8dI324qTumOviqsSWTTFNg&s
+Vada Pav,400,10,5, Potatoes Bread Spices, Veg, Stuff spiced potato filling in bread and serve,https://media.istockphoto.com/id/1329213718/photo/vada-pav.jpg?s=612x612&w=0&k=20&c=Yy3pm53KrPAnZXL9weCJDzXjxa2My34oVFx7RBCPmZ8=
+Tandoori Chicken,500,30,5, Chicken Yogurt Spices, Non-Veg, Marinate chicken in yogurt and spices,https://media.istockphoto.com/id/1171865516/photo/indian-tandoori-chicken-close-up-photo.jpg?s=612x612&w=0&k=20&c=h4c0mUeMWptnCS7W3TuRMGOKNzletUw-D2SkHYU6zYA=
+Dal Fry,300,12,5, Lentils Spices, Veg, Cook lentils and temper with spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxuz_SF0yAjkQsbmXmLWHPkWjNFWv4fKL50w&s
+Pongal,300,8,5, Rice Lentils Spices, Veg, Cook rice and lentils together with spices,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR42VtQcvzbTIjsZiRjkApTcVSMC0dKFOe_Fg&s
+Fish Curry,400,20,5, Fish Spices, Non-Veg, Cook fish in spicy gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPzzFwMydcPJfv9QLM3jeaAHnOVultlGOlnw&s
+Vegetable Korma,400,12,5, Mixed Vegetables Cream Spices, Veg, Cook mixed vegetables in rich creamy gravy,https://www.veganricha.com/wp-content/uploads/2017/12/vegan-vegetable-korma-veganricha-1936-1.jpg
+Chicken Curry,500,30,5, Chicken Spices, Non-Veg, Cook chicken in spiced gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7UYexyoKy3sprQedbjd-SnC12PXNDC30_w&s
+Methi Thepla,350,10,5, Whole Wheat Flour Fenugreek Spices, Veg, Make flatbreads with fenugreek and spices,https://i0.wp.com/binjalsvegkitchen.com/wp-content/uploads/2015/01/Methi-Thepla-H1.jpg?fit=600%2C900&ssl=1
+Egg Bhurji,300,20,4, Eggs Spices, Non-Veg, Scramble eggs with spices and vegetables,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj16MO4q_yTJyfSR5Fz1n5njYiWURC6xsR7w&s
+Paneer Tikka Masala,450,20,5, Paneer Spices, Veg, Cook paneer in spiced creamy gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbWFq2n72Ov-p8YIVSx6tIfCXe1NL8W0G2DA&s
+Veg Manchurian,350,10,4, Mixed Vegetables Spices, Veg, Fry vegetable balls and toss in sauce,https://i.ytimg.com/vi/xkMbJCtaaqA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDrMLgdijp9TJ92IUYugdtisp2tIw
+Aloo Baida,300,10,5, Potatoes Eggs Spices, Non-Veg, Stuff spiced potatoes with egg and fry,https://i0.wp.com/spicykitchen.net/wp-content/uploads/2015/07/egg-porotta.jpg?fit=640%2C427&ssl=1
+Khichda,400,15,5, Wheat Lentils Meat Spices, Non-Veg, Slow-cook wheat and lentils with meat and spices,https://i.ytimg.com/vi/HBGpojMI2x4/maxresdefault.jpg
+Palak Daal,300,10,5, Lentils Spinach Spices, Veg, Cook lentils with spinach and spices,https://www.spiceupthecurry.com/wp-content/uploads/2022/05/moong-dal-palak-2.jpg
+Prawn Curry,500,25,5, Prawns Spices, Non-Veg, Cook prawns in spicy gravy,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtO6a8Ns4eIP40g6Udb6AjFF87KrJ6v_ES4A&s

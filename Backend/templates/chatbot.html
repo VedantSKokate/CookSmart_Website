@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook Smart Chatbot</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('static/images/botbackground.png'); /* Replace this URL with your preferred image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .chat-box {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #f7f7f7;
+        }
+
+        .chat-message {
+            padding: 12px 18px;
+            border-radius: 18px;
+            font-size: 16px;
+            max-width: 80%;
+        }
+
+        .chat-message-user {
+            align-self: flex-end;
+            background-color: #dcf8c6;
+            color: #000;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-message-bot {
+            align-self: flex-start;
+            background-color: #ece5dd;
+            color: #000;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-box {
+            display: flex;
+            padding: 12px;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ccc;
+            position: relative; /* Added for autocomplete positioning */
+        }
+
+        .input-box input {
+            flex: 1;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-box button {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .input-box button:hover {
+            background-color: #20b857;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .input-box button:active {
+            background-color: #1d944f;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Autocomplete suggestions styling */
+        .autocomplete-suggestions {
+            position: absolute;
+            max-height: 150px;
+            overflow-y: auto;
+            z-index: 1000;
+            width: calc(100% - 20px); /* Adjusted for padding */
+            display: none; /* Hide by default */
+            margin-top: 8px; /* Space between input box and suggestions */
+            margin-bottom: 8px; /* Space below suggestions */
+            pointer-events: none; /* Disable pointer events on the container */
+        }
+
+        .suggestion {
+            padding: 10px;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.35); /* 35% dark of the text color */
+            background: none; /* Make background transparent */
+            pointer-events: auto; /* Enable pointer events for suggestions */
+        }
+
+        .suggestion:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Light highlight on hover */
+        }
+
+        /* Scrollbar Styling */
+        .chat-box::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .chat-box::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .chat-box::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        .chat-box::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box" class="chat-box">
+            <div class="chat-message chat-message-bot">Hi! I'm your Cook Smart assistant. Let me help you with your diet plan.</div>
+        </div>
+        <div class="input-box">
+            <input id="chat-input" type="text" placeholder="Type your response..." autofocus>
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+            <div id="suggestions" class="autocomplete-suggestions"></div>
+        </div>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const inputBox = document.getElementById('chat-input');
+        const suggestionsBox = document.getElementById('suggestions');
+
+        let step = 0;
+        let userData = {
+            weight: '',
+            height: '',
+            medical_condition: '',
+            diet_preference: '',
+            goal: ''
+        };
+
+        const medicalConditions = ['Diabetes', 'Thyroid', 'Hypertension', 'Asthma', 'None'];
+        const dietPreferences = ['Veg', 'Non-Veg', 'Both'];
+        const goals = ['Weight loss', 'Weight gain', 'Build muscle', 'Maintain fitness', 'Increase stamina'];
+
+        function appendMessage(sender, message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add(sender === 'bot' ? 'chat-message-bot' : 'chat-message-user', 'chat-message');
+            messageDiv.textContent = message;
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;  // Scroll to the bottom
+        }
+
+        function resetConversation() {
+            step = 0;
+            userData = {
+                weight: '',
+                height: '',
+                medical_condition: '',
+                diet_preference: '',
+                goal: ''
+            };
+            appendMessage('bot', 'What is your weight (in kg)?');
+        }
+
+        function askNextQuestion() {
+            const questions = [
+                'What is your weight (in kg)?',
+                'What is your height (in cm)?',
+                'Do you have any medical conditions (e.g., Diabetes, Thyroid, Hypertension, Asthma, None)?',
+                'What is your diet preference (Veg, Non-Veg, Both)?',
+                'What is your goal (Weight loss, Weight gain, Build muscle, Maintain fitness, Increase stamina)?'
+            ];
+
+            if (step < questions.length) {
+                appendMessage('bot', questions[step]);
+            } else {
+                appendMessage('bot', 'Thank you! Let me generate your personalized diet plan.');
+                submitData();
+            }
+        }
+
+        function sendMessage() {
+            const message = inputBox.value.trim();
+            if (!message) return;
+
+            appendMessage('user', message);
+            inputBox.value = '';
+
+            const stepsMap = [
+                () => userData.weight = message,
+                () => userData.height = message,
+                () => userData.medical_condition = message,
+                () => userData.diet_preference = message,
+                () => userData.goal = message
+            ];
+
+            if (step < stepsMap.length) {
+                stepsMap[step]();
+                step++;
+                askNextQuestion();
+            }
+            hideSuggestions();
+        }
+
+        function submitData() {
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(userData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.diet_plan) {
+                    appendMessage('bot', 'Here is your personalized diet plan:');
+                    appendMessage('bot', data.diet_plan);
+                } else if (data.error) {
+                    appendMessage('bot', 'Error: ' + data.error);
+                } else {
+                    appendMessage('bot', 'Sorry, something went wrong while generating your diet plan.');
+                }
+                resetConversation();
+            })
+            .catch(error => {
+                appendMessage('bot', 'Error: ' + error.message);
+                resetConversation();
+            });
+        }
+
+        // Autocomplete functionality
+        function showSuggestions(inputValue) {
+            const suggestions = [];
+
+            if (step === 2) { // Medical conditions
+                suggestions.push(...medicalConditions.filter(condition => condition.toLowerCase().includes(inputValue.toLowerCase())));
+            } else if (step === 3) { // Diet preferences
+                suggestions.push(...dietPreferences.filter(preference => preference.toLowerCase().includes(inputValue.toLowerCase())));
+            } else if (step === 4) { // Goals
+                suggestions.push(...goals.filter(goal => goal.toLowerCase().includes(inputValue.toLowerCase())));
+            }
+
+            suggestionsBox.innerHTML = ''; // Clear previous suggestions
+
+            if (suggestions.length > 0 && inputValue) {
+                suggestions.forEach(suggestion => {
+                    const suggestionDiv = document.createElement('div');
+                    suggestionDiv.className = 'suggestion';
+                    suggestionDiv.textContent = suggestion;
+                    suggestionDiv.onclick = () => {
+                        inputBox.value = suggestion;
+                        sendMessage(); // Automatically send the message
+                    };
+                    suggestionsBox.appendChild(suggestionDiv);
+                });
+                suggestionsBox.style.display = 'block'; // Show suggestions
+            } else {
+                hideSuggestions(); // Hide if no suggestions
+            }
+        }
+
+        function hideSuggestions() {
+            suggestionsBox.style.display = 'none';
+        }
+
+        inputBox.addEventListener('input', () => {
+            showSuggestions(inputBox.value);
+        });
+
+        inputBox.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                sendMessage();
+            } else if (event.key === 'Escape') {
+                hideSuggestions();
+            }
+        });
+
+        resetConversation(); // Start the conversation
+    </script>
+</body>
+</html>

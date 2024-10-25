@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Suggestions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('static/images/background2.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: white;
+            min-height: 100vh;
+            transition: background-size 0.5s ease-in-out, background-position 0.5s ease-in-out;
+        }
+
+        /* After generating recipes, the background adjusts gracefully */
+        body.expanded {
+            background-size: 150%;
+            background-position: top;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .specifications {
+            background-color: #343a40;
+            border-radius: 10px;
+            padding: 15px;
+            color: #f8f9fa;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1, h2 {
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #f8f9fa;
+        }
+
+        button[type="submit"] {
+            transition: background-color 0.3s ease;
+            background-color: #007bff;
+            border: none;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .alert {
+            font-weight: bold;
+            color: #f8d7da;
+            background-color: #721c24;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Recipe Suggestions</h1>
+
+        <form method="POST" class="mb-4" id="recipe-form">
+            <div class="form-group">
+                <label for="ingredients">Ingredients</label>
+                <input type="text" id="ingredients" name="ingredients" class="form-control" placeholder="Enter ingredients (comma separated)">
+            </div>
+
+            <div class="form-group">
+                <label for="protein">Max Protein (2 - 30 g)</label>
+                <input type="number" id="protein" name="protein" class="form-control" placeholder="Enter max protein (g)" min="2" max="30">
+            </div>
+
+            <div class="form-group">
+                <label for="fiber">Max Fiber (0 - 8 g)</label>
+                <input type="number" id="fiber" name="fiber" class="form-control" placeholder="Enter max fiber (g)" min="0" max="8">
+            </div>
+
+            <div class="form-group">
+                <label for="calories">Max Calories (100 - 600)</label>
+                <input type="number" id="calories" name="calories" class="form-control" placeholder="Enter max calories" min="100" max="600">
+            </div>
+
+            <div class="form-group">
+                <label for="diet_type">Diet Type</label>
+                <select id="diet_type" name="diet_type" class="form-control">
+                    <option value="Both">Both</option>
+                    <option value="Veg">Veg</option>
+                    <option value="Non-Veg">Non-Veg</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Get Recipe Suggestions</button>
+        </form>
+
+        {% if user_specifications %}
+        <div class="specifications">
+            <h5>Specifications Entered:</h5>
+            <p><strong>Ingredients:</strong> {{ user_specifications['Ingredients'] }}</p>
+            <p><strong>Max Protein:</strong> {{ user_specifications['Max Protein'] }} g</p>
+            <p><strong>Max Fiber:</strong> {{ user_specifications['Max Fiber'] }} g</p>
+            <p><strong>Max Calories:</strong> {{ user_specifications['Max Calories'] }}</p>
+            <p><strong>Diet Type:</strong> {{ user_specifications['Diet Preference'] }}</p>
+        </div>
+        {% endif %}
+
+        {% if message %}
+            <div class="alert alert-warning" role="alert">{{ message }}</div>
+        {% endif %}
+
+        <h2>Suggested Recipes:</h2>
+        <div class="row">
+            {% if recipes %}
+                {% for recipe in recipes %}
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-lg bg-dark text-white">
+                            <img src="{{ recipe['Photo'] }}" alt="{{ recipe['Name'] }}" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ recipe['Name'] }}</h5>
+                                <p class="card-text">
+                                    <strong>Calories:</strong> {{ recipe['Calories'] }}<br>
+                                    <strong>Protein:</strong> {{ recipe['Protein_gm'] }} g<br>
+                                    <strong>Fiber:</strong> {{ recipe['Fiber_gm'] }} g<br>
+                                    <strong>Ingredients:</strong> {{ recipe['Ingredients'] }}<br>
+                                    <strong>Steps:</strong> {{ recipe['Steps'] }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-12">
+                    <div class="alert alert-warning" role="alert">No recipes found based on your criteria.</div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (document.querySelectorAll('.card').length > 0) {
+                document.body.classList.add('expanded');
+            }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            const form = document.getElementById('recipe-form');
+            let activeElement = document.activeElement;
+
+            if (event.key === 'ArrowDown') {
+                event.preventDefault();
+                let nextElement = activeElement.nextElementSibling;
+                while (nextElement && !nextElement.matches('input, select, button')) {
+                    nextElement = nextElement.nextElementSibling;
+                }
+                if (nextElement) nextElement.focus();
+            }
+
+            if (event.key === 'ArrowUp') {
+                event.preventDefault();
+                let prevElement = activeElement.previousElementSibling;
+                while (prevElement && !prevElement.matches('input, select, button')) {
+                    prevElement = prevElement.previousElementSibling;
+                }
+                if (prevElement) prevElement.focus();
+            }
+
+            if (event.key === 'Enter' && activeElement.tagName === 'BUTTON') {
+                form.submit();
+            }
+        });
+    </script>
+</body>
+</html>

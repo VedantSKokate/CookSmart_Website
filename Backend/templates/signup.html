@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - CookSmart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('static/images/background.jpeg');
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .input-container {
+            position: relative;
+            margin: 15px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+            display: none; /* Initially hidden */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.2em;
+            background-color: #ff7e5f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #feb47b;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+
+        a {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+
+        .alert-success {
+            color: green;
+        }
+
+        .alert-danger {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up for CookSmart</h2>
+        <form id="signupForm" method="POST" action="{{ url_for('signup') }}">
+            <div class="input-container">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <div class="error-message" id="emailError">Please enter a valid email address.</div>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="eye-icon" id="togglePassword">&#128065;</span> <!-- Eye icon -->
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
+
+        <!-- Flash message section for feedback after signup -->
+        {% with messages = get_flashed_messages(with_categories=True) %}
+          {% if messages %}
+            <div class="alert">
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+              {% endfor %}
+            </div>
+            <script>
+                // Redirect to login page after 3 seconds if signup is successful
+                setTimeout(function() {
+                    window.location.href = "{{ url_for('login') }}";
+                }, 3000);
+            </script>
+          {% endif %}
+        {% endwith %}
+    </div>
+
+    <script>
+        // Password visibility toggle
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.textContent = type === 'password' ? '👁️' : '🙈'; // Change icon based on visibility
+        });
+
+        // Email validation
+        const form = document.getElementById('signupForm');
+        const emailInput = document.getElementById('email');
+        const emailError = document.getElementById('emailError');
+
+        form.addEventListener('submit', function(event) {
+            // Simple email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(emailInput.value)) {
+                emailError.style.display = 'block'; // Show error message
+                event.preventDefault(); // Prevent form submission
+            } else {
+                emailError.style.display = 'none'; // Hide error message
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookSmart Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('static/images/background.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .welcome-text h1 {
+            font-size: 3em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-box {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-box h2 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #333;
+            font-size: 1em;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        .input-box input:focus + label,
+        .input-box input:valid + label {
+            top: -20px;
+            color: #ff7e5f;
+            font-size: 0.8em;
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .remember-me {
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        .btn {
+            background: #ff7e5f;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #feb47b;
+        }
+
+        .register-text {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .register-link {
+            color: #ff7e5f;
+            text-decoration: none;
+        }
+
+        .register-link:hover {
+            color: #feb47b;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+
+        .alert.alert-success {
+            color: green;
+        }
+
+        .alert.alert-danger {
+            color: red;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="welcome-text">
+            <h1>User Login</h1>
+        </div>
+        <div class="login-box">
+            <h2>Login</h2>
+            <form id="loginForm" method="POST" action="{{ url_for('login') }}">
+                <div class="input-box">
+                    <input type="email" id="email" name="email" required>
+                    <label>Email</label>
+                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" name="password" required>
+                    <label>Password</label>
+                    <span class="eye-icon" id="togglePassword">&#128065;</span> <!-- Eye icon -->
+                </div>
+                <div class="options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Remember Me
+                    </label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="register-text">Don't have an account? <a href="{{ url_for('signup') }}" class="register-link">Sign Up</a></p>
+            </form>
+
+            <!-- Flash message section for login feedback -->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="alert">
+                        {% for message in messages %}
+                            <div class="alert {{ 'alert-success' if 'successful' in message else 'alert-danger' }}">{{ message }}</div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+
+    <script>
+        // Password visibility toggle
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.textContent = type === 'password' ? '👁️' : '🙈'; // Change icon based on visibility
+        });
+
+        // Email validation
+        const form = document.getElementById('loginForm');
+        const emailInput = document.getElementById('email');
+        const emailError = document.getElementById('emailError');
+
+        form.addEventListener('submit', function(event) {
+            // Simple email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(emailInput.value)) {
+                emailError.style.display = 'block'; // Show error message
+                event.preventDefault(); // Prevent form submission
+            } else {
+                emailError.style.display = 'none'; // Hide error message
+            }
+        });
+    </script>
+</body>
+</html>
