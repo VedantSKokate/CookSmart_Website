@@ -211,4 +211,5 @@ def predict():
     return jsonify({'diet_plan': diet_plan})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
+
